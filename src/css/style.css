@@ -5,9 +5,12 @@
 a{
     text-decoration: none;
 }
+input{
+    text-decoration: none;
+    border: 0;
+}
 body{
     direction:rtl;
-    color: aliceblue;
     height: 100vh;
     background-image: url(../image/img2.jpg);
     background-repeat: no-repeat;
@@ -23,11 +26,6 @@ nav{
     display: flex;
     justify-content: space-between;
     border-radius: 4px;
-}
-.serch-box{
-    padding-top: 10px;
-    font-size: 18px;
-    margin-right: 5px;
 }
 .serch-box form input{
         background-color: #725f5f;
@@ -87,108 +85,186 @@ nav ul a:hover{
     direction: ltr;
     padding-top: 50px;
 }
-.container{
+.contianer{
+    margin: 30px;
+    background-color: rgba(255,255,255,0.13);
+    backdrop-filter: blur(10px);
+    width: calc(100-30px);
     display: flex;
-    position: absolute;
-    top: 420px;
-    right: 200px;
-    text-align: center;
-    width: 600px;
-    height: 640px;
-    z-index: 1000;
+    justify-content: space-around;
 }
-.container img{
-    border-radius: 10px;
+.contianer img{
+    width: 80%;
+    margin: 20px 0;
 }
-.container p{
-    direction: ltr;
+.contianer p{
     position: absolute;
-    font-size: 40px;
-    padding-top: 30px;
-    text-shadow: 6px 3px rgb(136, 56, 56);
+    top: 100px;
+    right: 280px;
+    font-size: 30px;
+}
+.products{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    padding-left: 33px;
+    position: absolute;
+    top:300px;
+}
+.products img{
+    width: 200px;
+    height: 250px;
+}
+.products a img:hover{
+    border:2px solid #725f5f;
+    transform: scale(1.1);
 }
 .serch{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    padding-left: 33px;
     position: absolute;
-    z-index: 1000000;
-    top: 980px;
-    right: 500px;
+    top:890px;
+    left: 230px;
 }
-.serch input{
-    direction: ltr;
-    text-align: center;
-    width: 240px;
-    height: 50px;
-    background-color: #725f5f;
-    margin-left: 10px;
-}
-.serch button{
-    direction: ltr;
-    text-align: center;
-    width: 140px;
+.serch form input{
+    background-color: #efecec;
     height: 40px;
-}
-footer img{
-    position: absolute;
-    width: 900px;
-    height: 640px;
-    top: 1100px;
-    right: 230px;
-    border-radius: 10px;
-}
-.call a{
-    position: absolute;
-    top: 1600px;
-    right: 300px;
-    font-size: 24px;
-    color: rgb(19, 87, 146);
-    width: 200px;
-    height: 50px;
-    background-color: #fff;
+    width: 250px;
     text-align: center;
-    padding-top: 10px;
+}
+.serch form svg{
+    width: 20px;
+    height: 20px;
+    color: black;
+    position: absolute;
+    left: 40px;
+    top: 8px;
+}
+.main-product{
+    display: flex;
+    padding-right: 48px;
+    margin-top: 280px;
+    gap: 35px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    margin: 10px;
+    padding: 10px;
+}
+.offer{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 20px;
+}
+.offer-percent{
+    background-color: #1BE7FF;
+    color: #0F47FF;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.offer-price{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #B3C2E8;
+    margin-right: 10px;
+}
+.price-num{
+    font-size: 24px;
+}
+.purchase{
+    text-align: center;
+    padding-bottom: 15px;
+}
+button{
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px -1px #000000;
+    margin-top: 10px;
+    padding: auto;
+}
+.propits-description h4{
+    text-align: center;
+}
+.to-kill{
+    width: 30%;
+    box-shadow: 0 4px 8px #E6DED1;
+    border: 2px solid rgb(251, 238, 223);
+}
+.to-kill img{
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px -1px #000000;
+    margin: auto;
+    margin-top: 10px;
+}
+.frank{
+    width: 30%;
+    box-shadow: 0 4px 8px #E6DED1;
+    border: 2px solid rgb(251, 238, 223);
+}
+.frank img{
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px -1px #000000;
+    margin: auto;
+    margin-top: 10px;
+}
+.island{
+    width: 30%;
+    box-shadow: 0 4px 8px #E6DED1;
+    border: 2px solid rgb(251, 238, 223);
+}
+.island img{
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px -1px #000000;
+    margin: auto;
+    margin-top: 10px;
+}
+footer nav{
+    margin-top: 20px;
+    width: 100%;
+    height: 45px;
+    background-color: #797777;
+    border-radius: 0;
+}
+.about{
+    display: flex;
+    margin-top: 10px;
+}
+.call , .loc{
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: burlywood;
     border-radius: 5px;
 }
-.loc a{
-    position: absolute;
-    top: 1600px;
-    right: 600px;
-    font-size: 24px;
-    color: rgb(19, 87, 146);
-    width: 200px;
-    height: 50px;
-    background-color: #fff;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 5px;
-}
-.loc svg{
-    z-index: 20000;
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    top: 1613px;
-    right: 605px;
-    color: rgb(19, 87, 146);
-}
-.icon-1 svg{
+.end-box svg{
+    display: inline-flex;
     width: 30px;
     height: 30px;
-    border-radius: 3px;
-    position: absolute;
-    top: 1623px;
-    right: 845px;
+    padding-top: 5px;
+    padding-right: 10px;
 }
-.icon-1 a{
-    color: bisque;
+.box{
+    display: flex;
+    justify-content: space-between;
 }
-.icon-2 svg{
-    width: 30px;
-    height: 30px;
-    border-radius: 3px;
-    position: absolute;
-    top: 1623px;
-    right: 895px;
+.icon a svg{
+    margin-top: 15px;
+    color: #000000;
+    margin-left: 30px;
 }
-.icon-2 a{
-    color: bisque;
+.icon a svg:hover{
+    transform: scale(0.9);
 }
