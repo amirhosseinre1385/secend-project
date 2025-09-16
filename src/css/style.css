@@ -268,3 +268,11 @@ footer nav{
 .icon a svg:hover{
     transform: scale(0.9);
 }
+.serch-box form svg{
+    width: 20px;
+    height: 20px;
+    background-color: #d53fb7;
+    border-radius: 20px;
+    position: absolute;
+    right: 100px;
+}
